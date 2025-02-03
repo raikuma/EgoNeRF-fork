@@ -73,7 +73,7 @@ class ColmapPoseDescriptor(PoseDescriptorBase):
                 
             for line in lines:
                 tokens = line.split()
-                if tokens[0] == '#' or len(tokens) == 0:
+                if len(tokens) == 0 or tokens[0] == '#':
                     continue
                 i += 1
                 if i % 2 == 0:
