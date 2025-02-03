@@ -1,22 +1,21 @@
-PREFIX="CUDA_VISIBLE_DEVICES=2"
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/archiviz-flat_z/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/archiviz-flat_zx/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/archiviz-flat_zxR/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/barbershop_z/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/barbershop_zx/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/barbershop_zxR/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/classroom_z/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/classroom_zx/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/classroom_zxR/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/fisher-hut_z/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/fisher-hut_zx/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/fisher-hut_zxR/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/lone_monk_z/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/lone_monk_zx/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/lone_monk_zxR/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/pavilion-midday-pond_z/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/pavilion-midday-pond_zx/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/pavilion-midday-pond_zxR/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/restroom_z/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/restroom_zx/default.txt
-$PREFIX python train.py --config configs/EgoNeRF/synthetic/restroom_zxR/default.txt
+python train.py --config configs/EgoNeRF/synthetic/archiviz-flat_z/default.txt
+python train.py --config configs/EgoNeRF/synthetic/archiviz-flat_zx/default.txt
+python train.py --config configs/EgoNeRF/synthetic/archiviz-flat_zxR/default.txt
+python train.py --config configs/EgoNeRF/synthetic/barbershop_z/default.txt
+python train.py --config configs/EgoNeRF/synthetic/barbershop_zx/default.txt
+python train.py --config configs/EgoNeRF/synthetic/barbershop_zxR/default.txt
+python train.py --config configs/EgoNeRF/synthetic/classroom_z/default.txt
+python train.py --config configs/EgoNeRF/synthetic/classroom_zx/default.txt
+python train.py --config configs/EgoNeRF/synthetic/classroom_zxR/default.txt
+python train.py --config configs/EgoNeRF/synthetic/fisher-hut_z/default.txt
+python train.py --config configs/EgoNeRF/synthetic/fisher-hut_zx/default.txt
+python train.py --config configs/EgoNeRF/synthetic/fisher-hut_zxR/default.txt
+python train.py --config configs/EgoNeRF/synthetic/lone_monk_z/default.txt
+python train.py --config configs/EgoNeRF/synthetic/lone_monk_zx/default.txt
+python train.py --config configs/EgoNeRF/synthetic/lone_monk_zxR/default.txt
+python train.py --config configs/EgoNeRF/synthetic/pavilion-midday-pond_z/default.txt
+python train.py --config configs/EgoNeRF/synthetic/pavilion-midday-pond_zx/default.txt
+python train.py --config configs/EgoNeRF/synthetic/pavilion-midday-pond_zxR/default.txt
+python train.py --config configs/EgoNeRF/synthetic/restroom_z/default.txt
+python train.py --config configs/EgoNeRF/synthetic/restroom_zx/default.txt
+python train.py --config configs/EgoNeRF/synthetic/restroom_zxR/default.txt
