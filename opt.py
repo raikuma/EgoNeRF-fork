@@ -167,7 +167,7 @@ def config_parser(default_files=None):
     parser.add_argument("--N_vis", type=int, default=-1, help='N images to vis')
     parser.add_argument("--vis_every", type=int, default=10000, help='frequency of visualize the image, deprecated!!')
     parser.add_argument("--vis_list", type=int, action="append", help='list of visualization steps')
-    parser.add_argument("--i_weights", type=int, default=5000, help='frequency of save the weights')
+    parser.add_argument("--i_weights", type=int, default=50000, help='frequency of save the weights')
 
     # depth supervision
     parser.add_argument("--use_depth", action='store_true',

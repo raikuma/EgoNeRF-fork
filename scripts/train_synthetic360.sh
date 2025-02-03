@@ -1,0 +1,1 @@
+python train.py --config configs/EgoNeRF/synthetic/archiviz-flat_z/default.txt

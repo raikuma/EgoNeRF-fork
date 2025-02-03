@@ -1,0 +1,4 @@
+include = ../common_indoor.txt
+
+datadir = ./data/synthetic360/pavilion-midday-pond_z
+basedir = ./log/EgoNeRF/synthetic360/pavilion-midday-pond_z

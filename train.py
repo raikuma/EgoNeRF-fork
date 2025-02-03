@@ -395,7 +395,7 @@ def train(args):
         )
         print(f'======> {args.expname} train all psnr: {np.mean(PSNRs_train)} <========================')
 
-    if args.render_test:
+    if args.render_test or True:
         os.makedirs(f'{logfolder}/imgs_test_all', exist_ok=True)
         PSNRs_test = evaluation(
             test_dataset, model, args, renderer, f'{logfolder}/imgs_test_all/', N_vis=-1, n_coarse=n_coarse,

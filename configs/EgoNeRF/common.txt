@@ -26,7 +26,7 @@ downsample_train = 1
 downsample_test = 1
 
 N_vis = -1
-vis_list = [10000, 50000, 100000]
+vis_list = [50000, 100000]
 
 n_lamb_sigma = [16,16,16]
 n_lamb_sh = [48,48,48]
