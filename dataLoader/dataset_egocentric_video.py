@@ -13,7 +13,9 @@ from .ray_utils import *
 class EgocentricVideoDataset(EgoNeRFDataset):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        if 'Roam' in kwargs.get('data_dir'):
+        self.mask_bottom = kwargs.get('mask_bottom', False)
+
+        if self.mask_bottom:
             self.img_wh_origin = (int(1520 / self.downsample), int(760 / self.downsample))  # for Roam dataset
         else:
             self.img_wh_origin = (int(1920 / self.downsample), int(960 / self.downsample))  # for Ricoh dataset
@@ -89,6 +91,10 @@ class EgocentricVideoDataset(EgoNeRFDataset):
 
             # rays_o, rays_d = get_rays(self.directions, c2w)  # both (h*w, 3)
             rays_o, rays_d = get_rays(self.directions, c2w, roi=self.roi)  # both (h*w, 3)
+            if self.mask_bottom:
+                mask_len = 48 * 1520
+                rays_o = rays_o[-mask_len:]
+                rays_d = rays_d[-mask_len:]
             self.all_rays += [torch.cat([rays_o, rays_d], 1)]  # (h*w, 6)
 
         self.poses = torch.stack(self.poses)

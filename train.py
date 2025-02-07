@@ -81,7 +81,8 @@ def train(args):
         "near_far": args.near_far,
         "localization_method": args.localization_method,
     }
-    train_dataset = dataset(**load_params)
+    mask_bottom = "Roam" in args.datadir
+    train_dataset = dataset(**load_params, mask_bottom=mask_bottom)
 
     load_params["split"] = "test"
     load_params["is_stack"] = True
