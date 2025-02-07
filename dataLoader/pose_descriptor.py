@@ -75,9 +75,9 @@ class ColmapPoseDescriptor(PoseDescriptorBase):
                 tokens = line.split()
                 if len(tokens) > 0 and tokens[0] == '#':
                     continue
-                i += 1
-                if i % 2 == 0:
-                    continue
+                # i += 1
+                # if i % 2 == 0:
+                #     continue
 
                 quat, t, img_fname = np.array(list(map(float, tokens[1:5]))), np.array(list(map(float, tokens[5:8]))), tokens[9]
                 quat = quat[[1, 2, 3, 0]]
