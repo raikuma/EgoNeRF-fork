@@ -82,7 +82,8 @@ class ColmapPoseDescriptor(PoseDescriptorBase):
                 quat, t, img_fname = np.array(list(map(float, tokens[1:5]))), np.array(list(map(float, tokens[5:8]))), tokens[9]
                 quat = quat[[1, 2, 3, 0]]
                 if img_ext:
-                    img_fname = f"{int(img_fname.split('.')[0]):03d}" + img_ext
+                    # img_fname = f"{int(img_fname.split('.')[0]):03d}" + img_ext
+                    img_fname = img_fname.split('.')[0] + img_ext
 
                 rot = R.from_quat(quat).as_matrix()
                 w2c = np.concatenate((rot, t[:,np.newaxis]), axis=1)
