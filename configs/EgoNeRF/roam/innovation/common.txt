@@ -1,0 +1,7 @@
+include = ../common.txt
+
+datadir = ./data/360Roam_dataset/innovation
+basedir = ./log/EgoNeRF/360Roam_dataset/innovation
+
+use_envmap
+iter_pretrain_envmap = -1
