@@ -16,7 +16,7 @@ class EgocentricVideoDataset(EgoNeRFDataset):
         self.mask_bottom = kwargs.get('mask_bottom', False)
         print(f"mask_bottom: {self.mask_bottom}")
 
-        if self.mask_bottom:
+        if "Roam" in self.root_dir:
             self.img_wh_origin = (int(1520 / self.downsample), int(760 / self.downsample))  # for Roam dataset
         else:
             self.img_wh_origin = (int(1920 / self.downsample), int(960 / self.downsample))  # for Ricoh dataset
