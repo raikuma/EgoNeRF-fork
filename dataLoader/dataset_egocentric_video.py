@@ -13,7 +13,7 @@ from .ray_utils import *
 class EgocentricVideoDataset(EgoNeRFDataset):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        if 'Roam' in kwargs.get('datadir'):
+        if 'Roam' in kwargs.get('data_dir'):
             self.img_wh_origin = (int(1520 / self.downsample), int(760 / self.downsample))  # for Roam dataset
         else:
             self.img_wh_origin = (int(1920 / self.downsample), int(960 / self.downsample))  # for Ricoh dataset
