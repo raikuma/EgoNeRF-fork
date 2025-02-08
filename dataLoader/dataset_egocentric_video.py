@@ -94,8 +94,8 @@ class EgocentricVideoDataset(EgoNeRFDataset):
             rays_o, rays_d = get_rays(self.directions, c2w, roi=self.roi)  # both (h*w, 3)
             if self.mask_bottom:
                 mask_len = 48 * 1520
-                rays_o = rays_o[-mask_len:]
-                rays_d = rays_d[-mask_len:]
+                rays_o = rays_o[:-mask_len]
+                rays_d = rays_d[:-mask_len]
             self.all_rays += [torch.cat([rays_o, rays_d], 1)]  # (h*w, 6)
 
         self.poses = torch.stack(self.poses)
