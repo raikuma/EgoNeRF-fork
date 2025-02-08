@@ -1,7 +1,7 @@
 include = ../common.txt
 
-datadir = ./data/360Roam_dataset/cafe
-basedir = ./log/EgoNeRF/360Roam_dataset/cafe
+datadir = ./data/Roam360/cafe
+basedir = ./log/EgoNeRF/Roam360/cafe
 
 use_envmap
 iter_pretrain_envmap = -1
