@@ -1,0 +1,4 @@
+include = ../../synthetic/common_outdoor.txt
+
+datadir = ./data/synthetic360_2/fisher-hut
+basedir = ./log/EgoNeRF/synthetic360_2/fisher-hut

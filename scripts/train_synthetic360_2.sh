@@ -1,0 +1,10 @@
+python train.py --config configs/EgoNeRF/synthetic_2/archiviz-flat/default.txt;
+python train.py --config configs/EgoNeRF/synthetic_2/barbershop/default.txt;
+python train.py --config configs/EgoNeRF/synthetic_2/classroom/default.txt;
+python train.py --config configs/EgoNeRF/synthetic_2/fisher-hut/default.txt;
+python train.py --config configs/EgoNeRF/synthetic_2/lone_monk/default.txt;
+python train.py --config configs/EgoNeRF/synthetic_2/LOU/default.txt;
+python train.py --config configs/EgoNeRF/synthetic_2/pavilion-midday-chair/default.txt;
+python train.py --config configs/EgoNeRF/synthetic_2/pavilion-midday-pond/default.txt;
+python train.py --config configs/EgoNeRF/synthetic_2/restroom/default.txt;
+echo "Done";

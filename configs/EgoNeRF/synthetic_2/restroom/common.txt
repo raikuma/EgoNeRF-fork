@@ -1,0 +1,4 @@
+include = ../../synthetic/common_indoor.txt
+
+datadir = ./data/synthetic360/restroom
+basedir = ./log/EgoNeRF/synthetic360/restroom
