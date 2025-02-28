@@ -1,4 +1,4 @@
 include = ../../synthetic/common_indoor.txt
 
-datadir = ./data/synthetic360/LOU
-basedir = ./log/EgoNeRF/synthetic360/LOU
+datadir = ./data/synthetic360_2/LOU
+basedir = ./log/EgoNeRF/synthetic360_2/LOU
